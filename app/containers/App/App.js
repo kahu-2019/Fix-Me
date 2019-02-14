@@ -13,7 +13,7 @@ import HomePage from 'containers/HomePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
-import './style.css';
+import './style.scss';
 
 const App = () => (
   <div className="app-wrapper">
@@ -21,6 +21,8 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route path="" component={NotFoundPage} />
+      <Route path="/becs" component={Becs} />
+      
     </Switch>
     <Footer />
   </div>
