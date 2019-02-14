@@ -19,13 +19,13 @@ export default class FeaturePage extends React.Component {
   render() {
     return (
       <div className="feature-page">
-        {/* <Helmet>
+        <Helmet>
           <title>Feature Page</title>
           <meta
             name="description"
             content="Feature page of React.js Boilerplate application"
           />
-        </Helmet> */}
+        </Helmet>
          
       </div>
     );
