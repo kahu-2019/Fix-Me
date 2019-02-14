@@ -7,7 +7,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
-// import ReposList from 'components/ReposList';
 import './style.scss';
 
 export default class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -25,10 +24,20 @@ export default class HomePage extends React.PureComponent { // eslint-disable-li
     const {
       loading, error, repos, username, onChangeUsername, onSubmitForm
     } = this.props;
- 
+    // const reposListProps = {
+    //   loading,
+    //   error,
+    //   repos
+    // };
+
     return (
       <article>
-     
+       <Helmet>
+          <title>Home Page</title>
+          <meta name="description" content="A React.js Boilerplate application homepage" />
+        </Helmet>
+   
+  
       </article>
     );
   }
